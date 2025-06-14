@@ -1,0 +1,49 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 4,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "text"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicTriggerPathList": [],
+  "isDefaultClickDisabled": true,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "j9k0lbw1bi",
+  "leftColumn": 2,
+  "minWidth": 120,
+  "mobileBottomRow": 4,
+  "mobileLeftColumn": 2,
+  "mobileRightColumn": 18,
+  "mobileTopRow": 0,
+  "needsErrorInfo": false,
+  "parentColumnSpace": 4.5977020263671875,
+  "parentId": "1aqatl23u9",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 33,
+  "text": "{{ \n  ({\n    \"Health\": \"💊\",\n    \"Housing\": \"🏠\",\n    \"Savings\": \"💰\",\n    \"Shopping\": \"🛍️\",\n    \"Leisure\": \"🎉\",\n    \"Baby\": \"👶\",\n    \"Lifestyle\": \"🌿\",\n    \"Banking\": \"🏦\",\n    \"Income\": \"💼\",\n    \"Government\": \"🏛️\",\n    \"Mobility\": \"🛴\"\n  }[currentItem[\"Main Category\"]] || \"📁\") + \" \" + currentItem[\"Main Category\"]\n}}\n",
+  "topRow": 0,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "8uv69zqafl",
+  "widgetName": "Button1"
+}

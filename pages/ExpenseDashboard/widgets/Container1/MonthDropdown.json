@@ -1,0 +1,78 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 8,
+  "boxShadow": "none",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => (  moment().format(\"MM\") ))(MonthDropdown.options, MonthDropdown.serverSideFiltering) }}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "isVisible"
+    },
+    {
+      "key": "defaultOptionValue"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "isVisible"
+    },
+    {
+      "key": "onOptionChange"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onOptionChange"
+    }
+  ],
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": "{{ TimeUnitSelector.selectedOptionValue === \"month\" }}",
+  "key": "imgmr1t3yv",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Select Month",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 27,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 17,
+  "mobileLeftColumn": 25,
+  "mobileRightColumn": 45,
+  "mobileTopRow": 10,
+  "needsErrorInfo": false,
+  "onOptionChange": "{{ GetCategoryExpenses.run() }}",
+  "optionLabel": "label",
+  "optionValue": "value",
+  "originalBottomRow": 35,
+  "originalTopRow": 28,
+  "parentColumnSpace": 6.84375,
+  "parentId": "vwhpy308dm",
+  "parentRowSpace": 10,
+  "placeholderText": "Select option",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 62,
+  "serverSideFiltering": false,
+  "sourceData": "[\n  { \"label\": \"January\", \"value\": \"01\" },\n  { \"label\": \"February\", \"value\": \"02\" },\n  { \"label\": \"March\", \"value\": \"03\" },\n  { \"label\": \"April\", \"value\": \"04\" },\n  { \"label\": \"May\", \"value\": \"05\" },\n  { \"label\": \"June\", \"value\": \"06\" },\n  { \"label\": \"July\", \"value\": \"07\" },\n  { \"label\": \"August\", \"value\": \"08\" },\n  { \"label\": \"September\", \"value\": \"09\" },\n  { \"label\": \"October\", \"value\": \"10\" },\n  { \"label\": \"November\", \"value\": \"11\" },\n  { \"label\": \"December\", \"value\": \"12\" }\n]\n",
+  "topRow": 1,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "2ec14i6t8z",
+  "widgetName": "MonthDropdown"
+}

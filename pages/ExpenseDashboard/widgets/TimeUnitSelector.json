@@ -1,0 +1,53 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "alignment": "left",
+  "animateLoading": true,
+  "bottomRow": 11,
+  "boxShadow": "none",
+  "defaultOptionValue": "\"month\"",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [
+    {
+      "key": "options"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "flexVerticalAlignment": "start",
+  "isDisabled": false,
+  "isInline": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "xaygtohc9o",
+  "label": "Pick a time filter to see your expenses:",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 2,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "mobileBottomRow": 12,
+  "mobileLeftColumn": 11,
+  "mobileRightColumn": 31,
+  "mobileTopRow": 6,
+  "needsErrorInfo": false,
+  "options": "[\n  { \"label\": \"Week\", \"value\": \"week\" },\n  { \"label\": \"Month\", \"value\": \"month\" },\n  { \"label\": \"Quarter\", \"value\": \"quarter\" },\n  { \"label\": \"Year\", \"value\": \"year\" }\n]",
+  "originalBottomRow": 11,
+  "originalTopRow": 5,
+  "parentColumnSpace": 6.84375,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 62,
+  "topRow": 5,
+  "type": "RADIO_GROUP_WIDGET",
+  "version": 1,
+  "widgetId": "lsxitqrr9j",
+  "widgetName": "TimeUnitSelector"
+}

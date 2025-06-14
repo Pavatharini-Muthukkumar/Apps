@@ -1,0 +1,80 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 17,
+  "bottomRowBeforeCollapse": 17,
+  "boxShadow": "none",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => (  \"Q\" + Math.ceil(parseInt(moment().format(\"MM\")) / 3) ))(QuarterDropdown.options, QuarterDropdown.serverSideFiltering) }}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "isVisible"
+    },
+    {
+      "key": "defaultOptionValue"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "isVisible"
+    },
+    {
+      "key": "onOptionChange"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onOptionChange"
+    }
+  ],
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": "{{ TimeUnitSelector.selectedOptionValue === \"quarter\" }}",
+  "key": "4o3p8vnflj",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Select Quarter",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 27,
+  "mobileLeftColumn": 5,
+  "mobileRightColumn": 25,
+  "mobileTopRow": 20,
+  "needsErrorInfo": false,
+  "onOptionChange": "{{GetCategoryExpenses.run()}}",
+  "optionLabel": "label",
+  "optionValue": "value",
+  "originalBottomRow": 17,
+  "originalTopRow": 10,
+  "parentColumnSpace": 6.84375,
+  "parentId": "vwhpy308dm",
+  "parentRowSpace": 10,
+  "placeholderText": "Select option",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 27,
+  "serverSideFiltering": false,
+  "sourceData": "[\n  { \"label\": \"Q1\", \"value\": \"Q1\" },\n  { \"label\": \"Q2\", \"value\": \"Q2\" },\n  { \"label\": \"Q3\", \"value\": \"Q3\" },\n  { \"label\": \"Q4\", \"value\": \"Q4\" }\n]\n",
+  "topRow": 10,
+  "topRowBeforeCollapse": 10,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "pi4xsxt3gj",
+  "widgetName": "QuarterDropdown"
+}

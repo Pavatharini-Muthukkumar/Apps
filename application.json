@@ -48,6 +48,10 @@
     {
       "id": "AccountBalance",
       "isDefault": false
+    },
+    {
+      "id": "SubcategoryView",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {

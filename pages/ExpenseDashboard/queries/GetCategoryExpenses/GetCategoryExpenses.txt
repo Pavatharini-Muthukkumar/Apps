@@ -1,0 +1,11 @@
+SELECT
+  "Main Category",
+  ABS(SUM("Amount (€)")) AS total_spent
+FROM transactions
+WHERE "Amount (€)" < 0
+AND (
+  '{{ ExpenseFilterLogic.getFilters().timeUnit }}' = 'month'
+  AND "Month" = '{{ ExpenseFilterLogic.getFilters().year + "-" + ExpenseFilterLogic.getFilters().month }}'
+)
+GROUP BY "Main Category"
+ORDER BY total_spent DESC;

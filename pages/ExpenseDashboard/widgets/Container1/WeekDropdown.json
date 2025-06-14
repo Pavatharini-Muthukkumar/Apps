@@ -1,0 +1,83 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 17,
+  "bottomRowBeforeCollapse": 17,
+  "boxShadow": "none",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => (  (\"0\" + moment().isoWeek()).slice(-2) ))(WeekDropdown.options, WeekDropdown.serverSideFiltering) }}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "isVisible"
+    },
+    {
+      "key": "defaultOptionValue"
+    },
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "isVisible"
+    },
+    {
+      "key": "onOptionChange"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onOptionChange"
+    }
+  ],
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": "{{ TimeUnitSelector.selectedOptionValue === \"week\" }}",
+  "key": "4o3p8vnflj",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Select Week",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 28,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 17,
+  "mobileLeftColumn": 32,
+  "mobileRightColumn": 52,
+  "mobileTopRow": 10,
+  "needsErrorInfo": false,
+  "onOptionChange": "{{GetCategoryExpenses.run()}}",
+  "optionLabel": "label",
+  "optionValue": "value",
+  "originalBottomRow": 17,
+  "originalTopRow": 10,
+  "parentColumnSpace": 6.3173828125,
+  "parentId": "vwhpy308dm",
+  "parentRowSpace": 10,
+  "placeholderText": "Select option",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 63,
+  "serverSideFiltering": false,
+  "sourceData": "{{ \n  _.range(1, 53).map(i => {\n    const weekNum = i.toString().padStart(2, \"0\");\n    return { label: `Week ${weekNum}`, value: weekNum };\n  })\n}}\n",
+  "topRow": 10,
+  "topRowBeforeCollapse": 10,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "p3eplv41bn",
+  "widgetName": "WeekDropdown"
+}
